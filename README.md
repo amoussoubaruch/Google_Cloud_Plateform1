@@ -11,9 +11,9 @@ Aller sur https://console.developers.google.com/ et Créer un compte
 
 - Cliquer sur 'Create Project' et remplir les champs.
 - Associer à ce projet les API suivants :
-  >Google Compute Engine
-  >Google Cloud Storage
-  >Google Cloud Storage JSON API 
+  - Google Compute Engine
+  - Google Cloud Storage
+  - Google Cloud Storage JSON API 
 
 ```sh
 $ sudo apt-get update
