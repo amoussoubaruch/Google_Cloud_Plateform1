@@ -16,10 +16,11 @@ Aller sur https://console.developers.google.com/ et Créer un compte
 
 ###### NB : on suppose pour le reste du tutoriel que le nom du projet crée est Projet_GCP
 
-> Installer et Configurer gcloud
+> Installer gcloud
 
-  * Aller sur [ Google Cloud SDK ] et suivre les étapes
- 
+  * Aller sur https://cloud.google.com/sdk/ et suivre les étapes
+
+> Configurer gcloud
 ```sh
 $ gcloud auth login                   ## authenticate to Google cloud
 $ gcloud config set project hdp-00    ## set the default project
