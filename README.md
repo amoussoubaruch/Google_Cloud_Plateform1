@@ -2,7 +2,6 @@
 
 ### Etape 1 : Prérequis
 
-# 1
 > Créer un compte google plateform 
 
 Aller sur https://console.developers.google.com/ et Créer un compte 
@@ -19,8 +18,8 @@ Aller sur https://console.developers.google.com/ et Créer un compte
 
 > Installer et Configurer gcloud
 
-  - Aller sur [ Google Cloud SDK ] et suivre les étapes
-  - 
+  * Aller sur [ Google Cloud SDK ] et suivre les étapes
+ 
 ```sh
 $ gcloud auth login                   ## authenticate to Google cloud
 $ gcloud config set project hdp-00    ## set the default project
