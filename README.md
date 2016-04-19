@@ -15,7 +15,7 @@ Aller sur https://console.developers.google.com/ et Créer un compte
   - Google Cloud Storage
   - Google Cloud Storage JSON API 
 
-####### NB : on suppose pour le reste du tutoriel que le nom du projet crée est Projet_GCP
+###### NB : on suppose pour le reste du tutoriel que le nom du projet crée est Projet_GCP
 
 > Installer et Configurer gcloud
 
