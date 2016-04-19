@@ -2,7 +2,7 @@
 
 ### Etape 1 : Prérequis
 
-> Créer un compte google plateform 
+> ###### Créer un compte google plateform 
 
 Aller sur https://console.developers.google.com/ et Créer un compte 
 
