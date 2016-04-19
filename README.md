@@ -1,7 +1,5 @@
 # Mise en place d'un cluster Hadoop Spark 
 
-![Alt text](C:/Users/b.amoussou-djangban/Pictures/image/googleCloud.png?raw=true "Optional Title")
-
 ### Etape 1 : Prérequis
 
 > ###### Créer un compte google plateform 
@@ -65,6 +63,42 @@ $ gsutil mb -p Projet_GCP gs://Projet_GCP     ## create a cloud storage bucket
 ```sh
 sudo gcloud components update
 ```
+
+> ###### Telecharger bdutils
+
+  * Installer Git
+```sh
+$ sudo apt-get install git
+```
+ * bdutils
+```sh
+$ git clone https://github.com/GoogleCloudPlatform/bdutil
+$ cd bdutil
+$ ./bdutil --help # Pour avoir toute la documentation dbutil
+```
+> ###### Lister toutes les extensions bdutils
+```sh
+$ ls extensions
+```
+
+### Etape 2 : Installation Ambari
+
+> ###### Configurer le fichier bdutil_env.sh
+```sh
+$ vim bdutil_env.sh  # I pour effectuer les modifications dans le fichier, ensuite echap puis :wq pour enregistrer et quitter
+```
+
+> ###### Deployer la plateforme HDP 
+```sh
+$ 
+```
+
+
+
+
+
+
+
 
 
 
