@@ -6,7 +6,7 @@
 
 Aller sur https://console.developers.google.com/ et Créer un compte 
 
-> Créer un google plateform projet
+> ###### Créer un google plateform projet
 
 - Cliquer sur 'Create Project' et remplir les champs
 - Associer à ce projet les API suivants :
@@ -16,11 +16,11 @@ Aller sur https://console.developers.google.com/ et Créer un compte
 
 ###### NB : on suppose pour le reste du tutoriel que le nom du projet crée est Projet_GCP
 
-> Installer gcloud
+> ###### Installer gcloud
 
   * Aller sur https://cloud.google.com/sdk/ et suivre les étapes
 
-> Configurer gcloud
+> ###### Configurer gcloud
 ```sh
 $ gcloud auth login                   ## authenticate to Google cloud
 $ gcloud config set project hdp-00    ## set the default project
