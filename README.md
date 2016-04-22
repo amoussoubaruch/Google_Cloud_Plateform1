@@ -90,7 +90,7 @@ $ vim bdutil_env.sh  # I pour effectuer les modifications dans le fichier, ensui
 
 > ###### Deployer la plateforme HDP 
 ```sh
-$ 
+$ ./bdutil -e ambari deploy
 ```
 
 
