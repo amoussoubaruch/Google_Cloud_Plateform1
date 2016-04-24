@@ -93,6 +93,50 @@ $ vim bdutil_env.sh  # I pour effectuer les modifications dans le fichier, ensui
 $ ./bdutil -e ambari deploy
 ```
 
+### Etape 3 : Installation Ambari
+# Generate an env file from flags, then deploy/delete using that file.
+```sh
+$ ./bdutil --bucket amoussoubaruch-spark-bucket --project hadoop-1148  --default_fs gs --machine_type n1-standard-1 --force --zone us-central1-c --num_workers 5 --prefix spark-cluster --verbose generate_config spark_dev_env.sh
+```
+
+# Check cluster configuration
+```sh
+$ nano spark_dev_env.sh
+```
+### Etape 4 : Deploy instance
+
+```sh
+# run cluster
+$ ./bdutil --force -e spark_dev_env.sh,extensions/querytools/querytools_env.sh,extensions/spark/spark_env.sh deploy
+
+# ssh to cluster master
+$ gcloud --project=hadoop-1148 compute ssh --zone=us-central1-c spark-cluster-m
+
+# Se connecter en tant qu'utilisateur hadoop
+$ sudo su - hadoop
+
+# list files
+$ ls -l
+
+# list bucket file
+$ hadoop fs -ls
+$ gsutil ls gs://amoussoubaruch-spark-bucket
+
+#os.environ["SPARK_HOME"]
+$ SPARK_HOME='/home/hadoop/spark-install'
+
+# Add the PySpark classes to the Python path:
+$ export SPARK_HOME="$SPARK_HOME"
+$ export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
+$ export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
+```
+
+### Etape 5 : Run Spark
+```sh
+cd spark-install
+./bin/pyspark
+```
+
 
 
 
