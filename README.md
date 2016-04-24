@@ -133,8 +133,8 @@ $ export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
 
 ### Etape 5 : Run Spark
 ```sh
-cd spark-install
-./bin/pyspark
+$ cd spark-install
+$ ./bin/pyspark
 ```
 
 
