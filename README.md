@@ -141,6 +141,11 @@ $ ./bin/pyspark
 
 #########2 Après avoir lancer un serveur
 
+########### Delete cluster
+```sh
+$ ./bdutil delete
+```
+
 
 
 
