@@ -96,7 +96,7 @@ $ ./bdutil -e ambari deploy
 ### Etape 3 : Installation Ambari
 # Generate an env file from flags, then deploy/delete using that file.
 ```sh
-$ ./bdutil --bucket amoussoubaruch-spark-bucket --project hadoop-1148  --default_fs gs --machine_type n1-standard-1 --force --zone us-central1-c --num_workers 5 --prefix spark-cluster --verbose generate_config spark_dev_env.sh
+$ ./bdutil --bucket amoussoubaruch-spark-bucket --project projetgcp-1286  --default_fs gs --machine_type n1-standard-1 --force --zone us-central1-c --num_workers 2 --prefix spark-cluster --verbose generate_config spark_dev_env.sh
 ```
 
 # Check cluster configuration
@@ -110,7 +110,7 @@ $ nano spark_dev_env.sh
 $ ./bdutil --force -e spark_dev_env.sh,extensions/querytools/querytools_env.sh,extensions/spark/spark_env.sh deploy
 
 # ssh to cluster master
-$ gcloud --project=hadoop-1148 compute ssh --zone=us-central1-c spark-cluster-m
+$ gcloud --project=projetgcp-1286 compute ssh --zone=us-central1-c spark-cluster-m
 
 # Se connecter en tant qu'utilisateur hadoop
 $ sudo su - hadoop
