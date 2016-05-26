@@ -145,7 +145,7 @@ $ ./bin/pyspark
 ```sh
 $ ./bdutil delete
 ```
-######### Build application with gcp
+
 
 
 
